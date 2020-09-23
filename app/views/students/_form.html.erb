@@ -1,0 +1,7 @@
+<%= form_tag new_student_path do %>
+    <label>Student Form</label><br>
+  <%= text_field_tag :'student[first_name]', nil, placeholder: 'first name'%><br>
+  <%= text_field_tag :'student[last_name]', nil, placeholder: 'last name' %><br>
+  <%= submit_tag "Submit Student" %>
+  <%end%>
+  <%= params.inspect %>
